@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Happy Anniversary❤️</title>
+    <title>Happy Anniversary</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -20,9 +20,9 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #ffe6eb;
+            background-color: #e6f4ff; /* เปลี่ยนเป็นโทนฟ้าอ่อน */
             font-family: 'Kanit', sans-serif;
-            color: #4a0e17;
+            color: #0e374a; /* เปลี่ยนสีตัวอักษรให้เข้ากับโทนฟ้า */
             position: relative;
         }
 
@@ -44,7 +44,7 @@
             font-size: 24px;
             animation: floatUp linear forwards;
             opacity: 0.9;
-            filter: drop-shadow(0 2px 5px rgba(255, 105, 180, 0.4));
+            filter: drop-shadow(0 2px 5px rgba(105, 180, 255, 0.4)); /* เงาโทนฟ้า */
         }
 
         @keyframes floatUp {
@@ -68,7 +68,7 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background-image: url('photo6.jpg');
+            background-image: url('photo6.png'); /* เปลี่ยนเป็น photo6.png ตามที่ขอ */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -190,7 +190,7 @@
             });
         });
 
-        // Floating Hearts Generator
+        // Floating Hearts Generator (โทนฟ้า/ขาว)
         const heartContainer = document.getElementById('heart-container');
         const heartEmojis = ['🩵', '🤍', '🫧'];
 
@@ -240,7 +240,7 @@
             if (overlayImg.complete && overlayImg.naturalWidth !== 0) {
                 ctx.drawImage(overlayImg, 0, 0, size, size);
             } else {
-                ctx.fillStyle = '#ffb7c5';
+                ctx.fillStyle = '#b7e3ff'; // เปลี่ยนสีพื้นหลัง Canvas ตอนโหลดรูปซ้อนเป็นโทนฟ้า
                 ctx.fillRect(0, 0, size, size);
             }
         }
